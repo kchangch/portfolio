@@ -31,7 +31,7 @@ const SingleWork = () => {
 
     if (!singlePost) {
         return (
-            <div className="min-h-screen flex justify-center items-center">
+            <div className="relative md:absolute w-full min-h-screen flex justify-center items-center">
                 <Particles params={particlesConfig} className="bg-black absolute object-cover w-full h-full"/>
                 <TransverseLoading color={'#15cdfc'} size={'large'}/>
             </div>
