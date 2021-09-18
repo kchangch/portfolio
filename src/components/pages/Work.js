@@ -40,7 +40,7 @@ const Work = () => {
             <Particles params={particlesConfig} className="bg-black absolute object-cover w-full h-full"/>
             <section className="container mx-auto justify-center relative pt-20">
                     <FadeIn transitionDuration={600} delay={200}>
-                        <h1 className="text-2xl md:text-4xl lg:text-6xl flex justify-center textColor">Where I've Worked</h1>
+                        <h1 className="text-2xl md:text-4xl lg:text-6xl flex justify-center textColor">Where I have Worked</h1>
                     </FadeIn>
                     <FadeIn transitionDuration={600} delay={500}>
                         <h2 className="text-base p-3 md:text-xl lg:text-xl text-white flex justify-center pt-5">Some places where I had great experiences</h2>

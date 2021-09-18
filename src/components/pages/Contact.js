@@ -40,9 +40,15 @@ const Contact = () => {
                     </FadeIn>
                     <FadeIn transitionDuration={600} delay={1400}>
                         <div className="flex flex-row justify-center align-center p-10">
-                            <SocialIcon url="https://github.com/kchangch/" className="mr-20" target="_blank" bgColor="#fff" fgColor="#000" style={{height: 100, width: 100}} />
-                            <SocialIcon url="https://www.linkedin.com/in/kidjouchang/" className="mr-20" target="_blank" bgColor="#fff" fgColor="#000" style={{height: 100, width: 100}} />
-                            <SocialIcon url="mailto: kidjou1990@hotmail.com" target="_blank" bgColor="#fff" fgColor="#000" style={{height: 100, width: 100}} />
+                            <div className="mb-5 mr-5 lg:mr-10 flex justify-center">
+                                <SocialIcon url="https://github.com/kchangch/" target="_blank" bgColor="#fff" fgColor="#000" style={{height: 60, width: 60}} />
+                            </div>
+                            <div className="mb-5 mr-5 lg:mr-10 flex justify-center">
+                                <SocialIcon url="https://www.linkedin.com/in/kidjouchang/" target="_blank" bgColor="#fff" fgColor="#000" style={{height: 60, width: 60}} />
+                            </div>
+                            <div className="flex justify-center">
+                                <SocialIcon url="mailto: kidjou1990@hotmail.com" target="_blank" bgColor="#fff" fgColor="#000" style={{height: 60, width: 60}} />
+                            </div>
                         </div>
                     </FadeIn>
                 </div>

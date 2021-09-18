@@ -70,7 +70,7 @@ const Projects = () => {
                                             href={project.link} 
                                             rel="noopener noreferrer" 
                                             target="_blank" 
-                                            className="textColor font-bold hover:underline hover:textColor text-xl"
+                                            className="text-black font-bold hover:underline hover:text-cyan-400 text-xl"
                                         >
                                             View the Project{" "}
                                         </a>
