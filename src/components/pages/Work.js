@@ -51,8 +51,7 @@ const Work = () => {
                                 <article>
                                     <Link to={"/work/" + post.slug.current} key={post.slug.current}>
                                         <span 
-                                            className="block h-60 relative rounded shadow leading-snug bg-gray-400 hover:bg-white border-l-8 justify-center flex items-center"
-                                            style={{borderColor:'#15cdfc'}}
+                                            className="block h-60 relative rounded shadow leading-snug bg-white lg:bg-gray-400 hover:bg-white justify-center flex items-center"
                                             key={index}
                                         >
                                             <img 

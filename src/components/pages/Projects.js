@@ -35,15 +35,15 @@ const Projects = () => {
             <Particles params={particlesConfig} className="bg-black absolute object-cover w-full h-full"/>
             <section className="container mx-auto justify-center relative pt-20">
                     <FadeIn transitionDuration={600} delay={200}>
-                        <h1 className="text-2xl md:text-4xl lg:text-6xl flex justify-center textColor">Things I've Built</h1>
+                        <h1 className="text-2xl md:text-4xl lg:text-6xl flex justify-center textColor">Things I have Built</h1>
                     </FadeIn>
                     <FadeIn transitionDuration={600} delay={500}>
-                        <h2 className="text-base p-3 md:text-xl lg:text-xl text-white flex justify-center pt-5">Here are some of my projects I've worked along my career</h2>
+                        <h2 className="text-base text-center p-3 md:text-xl lg:text-xl text-white flex justify-center pt-5">Here are some of my projects I have worked along my career</h2>
                     </FadeIn>
                     <section className="grid lg:grid-cols-3 gap-8 p-8 lg:p-15">
                         { projectData && projectData.map((project, index) => (
                             <FadeIn transitionDuration={600} delay={800}>
-                                <article className="relative rounded-lg bg-gray-400 p-5 hover:bg-white">
+                                <article className="relative rounded-lg bg-white lg:bg-gray-400 p-5 hover:bg-white">
                                     <h3 className="text-black text-3xl font-bold mb-2">
                                         <a 
                                             href={project.link} 

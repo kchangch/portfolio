@@ -49,7 +49,7 @@ const About = () => {
                     <FadeIn transitionDuration={600} delay={400}>
                         <div className="flex justify-center">
                             <h1 className="text-2xl md:text-4xl lg:text-6xl" style={{color:"#0281A1"}}>
-                                Hey there. I'm{" "}
+                                Hey there. I am{" "}
                                 <span style={{color:"#86E5FD"}}>Argenis Chang</span>
                             </h1>
                         </div>
@@ -66,7 +66,7 @@ const About = () => {
                                 that allows users to have a great experience with ease to navigate and use all the features. <br/><br/>
                                 I have recently <span style={{color:"#15cdfc", fontWeight:'bold'}}>built and launched my personal portfolio</span> as 
                                 a side project using React, Sanity.io, and Netlify. <br/><br/>
-                                Here are a few technologies I've been working with recently: <br/>
+                                Here are a few technologies I have been working with recently: <br/>
                                 <FadeIn transitionDuration={600} delay={900}>
                                     <div className="flex flex-row">
                                         <div className="mr-10 lg:mr-20">
