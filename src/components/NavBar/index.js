@@ -7,6 +7,10 @@ const NavBar = ({ toggle }) => {
             <Nav>
                 <NavLink to="/">
                     <h1 className="pl-5">Logo</h1>
+                    {/* <img 
+                        src={require('../../logo.svg')}
+                        alt="logo"
+                    /> */}
                 </NavLink>
                 <MobileIcon onClick={toggle}>
                     <Bars />
