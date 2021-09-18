@@ -1,16 +1,18 @@
 import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, MobileIcon } from "./NavBarElements";
+import Logo from "../../images/logo-7.svg"
 
 const NavBar = ({ toggle }) => {
     return (
         <div>
             <Nav>
                 <NavLink to="/">
-                    <h1 className="pl-5">Logo</h1>
-                    {/* <img 
-                        src={require('../../logo.svg')}
-                        alt="logo"
-                    /> */}
+                    <img 
+                        src={Logo}
+                        style={{height: 59, width: 42}}
+                        className="ml-2 lg:ml-5"
+                        alt="Logo"
+                    />
                 </NavLink>
                 <MobileIcon onClick={toggle}>
                     <Bars />

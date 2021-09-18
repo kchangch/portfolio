@@ -5,6 +5,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import { TransverseLoading } from "react-loadingg";
 import Particles from "react-particles-js";
 import particlesConfig from '../Particles/particlesConfig';
+import FadeIn from 'react-fade-in';
 
 const SingleWork = () => {
 
@@ -43,14 +44,18 @@ const SingleWork = () => {
             <Particles params={particlesConfig} className="bg-black absolute object-cover w-full h-full"/>
             <article className="relative flex justify-center min-h-screen pt-12 lg:pt-20 px-8">
                 <div className="text-lg justify-center">
-                    <div>
-                        <h1 className="text-3xl lg:text-6xl textColor">
-                            {singlePost.title}
-                        </h1>
-                    </div>
-                    <div className="py-2 prose lg:prose-xl max-w-full">
-                        <BlockContent blocks={singlePost.body} projectId="m7sihnvj" dataset="production" className="text-white"/>
-                    </div>
+                    <FadeIn transitionDuration={600} delay={200}>
+                        <div>
+                            <h1 className="text-3xl lg:text-6xl textColor">
+                                {singlePost.title}
+                            </h1>
+                        </div>
+                    </FadeIn>
+                    <FadeIn transitionDuration={600} delay={500}>
+                        <div className="py-2 prose lg:prose-xl max-w-full">
+                            <BlockContent blocks={singlePost.body} projectId="m7sihnvj" dataset="production" className="text-white"/>
+                        </div>
+                    </FadeIn>
                 </div>
             </article>
         </main>

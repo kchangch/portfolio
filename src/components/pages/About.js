@@ -46,7 +46,7 @@ const About = () => {
                     </div>
                 </FadeIn>
                 <div className="text-lg flex flex-col justify-center">
-                    <FadeIn transitionDuration={600} delay={300}>
+                    <FadeIn transitionDuration={600} delay={400}>
                         <div className="flex justify-center">
                             <h1 className="text-2xl md:text-4xl lg:text-6xl" style={{color:"#0281A1"}}>
                                 Hey there. I'm{" "}
@@ -54,7 +54,7 @@ const About = () => {
                             </h1>
                         </div>
                     </FadeIn>
-                    <FadeIn transitionDuration={600} delay={400}>
+                    <FadeIn transitionDuration={600} delay={700}>
                         <div className="p-5 lg:pl-0 prose lg:prose-xl text-white text-justify flex justify-center self-center">
                             <p>
                                 I am a recent graduate from <span style={{color:"#15cdfc", fontWeight:'bold'}}>Simon Fraser University</span>. 
@@ -67,21 +67,23 @@ const About = () => {
                                 I have recently <span style={{color:"#15cdfc", fontWeight:'bold'}}>built and launched my personal portfolio</span> as 
                                 a side project using React, Sanity.io, and Netlify. <br/><br/>
                                 Here are a few technologies I've been working with recently: <br/>
-                                <div className="flex flex-row">
-                                    <div className="mr-10 lg:mr-20">
-                                        <ul>
-                                            <li>JavaScript (ES6+)</li>
-                                            <li>React/React Native</li>
-                                            <li>Node.js</li>
-                                        </ul>
+                                <FadeIn transitionDuration={600} delay={900}>
+                                    <div className="flex flex-row">
+                                        <div className="mr-10 lg:mr-20">
+                                            <ul>
+                                                <li>JavaScript (ES6+)</li>
+                                                <li>React/React Native</li>
+                                                <li>Node.js</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>C++</li>
+                                                <li>Python</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <ul>
-                                            <li>C++</li>
-                                            <li>Python</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                </FadeIn>
                             </p>
                         </div>
                     </FadeIn>
