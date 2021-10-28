@@ -20,14 +20,14 @@ const Contact = () => {
                     <FadeIn transitionDuration={600} delay={500}>
                     <div className="mt-10 mx-auto flex justify-center text-center text-sm lg:text-2xl text-white leading-relaxed lg:leading-snug">
                         <p>
-                            Although I’m not currently looking for any new opportunities, my inbox is always open.
+                            Although I am not currently looking for any new opportunities, my inbox is always open.
                         </p>
                     </div>
                     </FadeIn>
                     <FadeIn transitionDuration={600} delay={800}>
                     <div className="pt-5 mx-auto flex justify-center text-sm text-center lg:text-2xl text-white leading-relaxed lg:leading-snug">
                         <p>
-                            Whether you have a question or just want to say hi, I’ll do my best to get back to you!
+                            Whether you have a question or just want to say hi, I will do my best to get back to you!
                         </p>
                     </div>
                     </FadeIn>
