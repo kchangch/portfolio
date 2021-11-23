@@ -68,7 +68,7 @@ const About = () => {
 					<FadeIn transitionDuration={600} delay={700}>
 						<div className="p-5 lg:pl-0 prose lg:prose-xl text-white text-justify flex justify-center self-center">
 							<p>
-								I am a recent graduate from{" "}
+								I am a graduate from{" "}
 								<span style={{ fontWeight: "bold" }}>
 									Simon Fraser University
 								</span>
