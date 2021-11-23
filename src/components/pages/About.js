@@ -119,6 +119,7 @@ const About = () => {
 											<ul>
 												<li>C++</li>
 												<li>Python</li>
+												<li>AWS</li>
 											</ul>
 										</div>
 									</div>
