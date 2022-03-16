@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../client";
 import { TransverseLoading } from "react-loadingg";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import particlesConfig from "../Particles/particlesConfig";
 import FadeIn from "react-fade-in";
 
@@ -76,7 +76,7 @@ const Projects = () => {
 											<strong className="font-bold">Type</strong>:{" "}
 											{project.projectType}
 										</span>
-										<p className="my-6 text-lg text-gray-700 leading-relaxed">
+										<p className="my-6 text-lg text-gray-700 leading-relaxed line-clamp-2">
 											{project.description}
 										</p>
 										<a

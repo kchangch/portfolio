@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import particlesConfig from "../Particles/particlesConfig";
 import sanityClient from "../../client";
 import imageUrlBuilder from "@sanity/image-url";
