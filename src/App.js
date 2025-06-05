@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, Suspense, lazy } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Sidebar from "./components/SideBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Project from "./components/pages/Projects";
-import Contact from "./components/pages/Contact";
-import Work from "./components/pages/Work";
-import SingleWork from "./components/pages/SingleWork";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoadingSpinner from "./components/Loading/LoadingSpinner";
+
+// Lazy load route components
+const Home = lazy(() => import("./components/pages/Home"));
+const About = lazy(() => import("./components/pages/About"));
+const Project = lazy(() => import("./components/pages/Projects"));
+const Contact = lazy(() => import("./components/pages/Contact"));
+const Work = lazy(() => import("./components/pages/Work"));
+const SingleWork = lazy(() => import("./components/pages/SingleWork"));
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -18,18 +21,20 @@ function App() {
 	};
 
 	return (
-		<Router>
+		<BrowserRouter>
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<NavBar toggle={toggle} />
-			<Switch>
-				<Route component={Home} path="/" exact />
-				<Route component={About} path="/about" />
-				<Route component={SingleWork} path="/work/:slug" />
-				<Route component={Work} path="/work" />
-				<Route component={Project} path="/project" />
-				<Route component={Contact} path="/contact" />
-			</Switch>
-		</Router>
+			<Suspense fallback={<LoadingSpinner message="Loading page..." />}>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/work/:slug" element={<SingleWork />} />
+					<Route path="/work" element={<Work />} />
+					<Route path="/project" element={<Project />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</Suspense>
+		</BrowserRouter>
 	);
 }
 
