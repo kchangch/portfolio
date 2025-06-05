@@ -57,12 +57,12 @@ const Work = () => {
   }
 
   return (
-    <main className="relative md:absolute w-full min-h-screen">
+    <main className="relative md:absolute w-full min-h-screen overflow-y-auto pb-20">
       <Particles
         params={particlesConfig}
         className="bg-black absolute object-cover w-full h-full"
       />
-      <section className="container mx-auto justify-center relative pt-20">
+      <section className="container mx-auto justify-center relative pt-28 md:pt-32">
         <FadeIn transitionDuration={600} delay={200}>
           <h1 className="text-2xl md:text-4xl lg:text-6xl flex justify-center textColor">
             Where I have Worked

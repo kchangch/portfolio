@@ -74,13 +74,13 @@ const SingleWork = () => {
   }
 
   return (
-    <main className="relative md:absolute w-full h-screen overflow-hidden">
+    <main className="relative md:absolute w-full min-h-screen overflow-y-auto pb-20">
       <Particles
         params={particlesConfig}
         className="bg-black absolute object-cover w-full h-full"
       />
       <Suspense fallback={<LoadingSpinner message="Loading content..." />}>
-        <article className="relative flex justify-center min-h-screen pt-12 lg:pt-20 px-8">
+        <article className="relative flex justify-center min-h-screen pt-28 md:pt-32 px-8">
           <div className="text-lg justify-center">
             <FadeIn transitionDuration={600} delay={200}>
               <div>
