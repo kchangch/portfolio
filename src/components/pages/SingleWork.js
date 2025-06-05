@@ -4,7 +4,6 @@ import sanityClient from "../../client";
 import BlockContent from "@sanity/block-content-to-react";
 import Particles from "react-tsparticles";
 import particlesConfig from "../Particles/particlesConfig";
-import FadeIn from "react-fade-in";
 import LoadingSpinner from "../Loading/LoadingSpinner";
 
 const SingleWork = () => {
